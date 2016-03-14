@@ -1,0 +1,18 @@
+{
+  "name": "circular-iterator",
+  "version": "1.0.0",
+  "description": "a simple infinite array iterator using generators",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "test-watch": "mocha -w",
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha"
+  },
+  "author": "Alvaro Pinot",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "3.5.0",
+    "istanbul": "0.4.2",
+    "mocha": "2.4.5"
+  }
+}
