@@ -4,7 +4,7 @@
   "description": "a simple infinite array iterator using generators",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "npm run coverage",
     "test-watch": "mocha -w",
     "coverage": "istanbul cover ./node_modules/.bin/_mocha"
   },
