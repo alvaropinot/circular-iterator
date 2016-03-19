@@ -2,6 +2,7 @@
   "name": "circular-iterator",
   "version": "1.0.0",
   "description": "a simple infinite array iterator using generators",
+  "keywords": ["circular", "iterator", "infinite", "array", "generators"],
   "main": "index.js",
   "scripts": {
     "test": "npm run coverage",
@@ -10,9 +11,14 @@
   },
   "author": "Alvaro Pinot",
   "license": "MIT",
+  "bugs": "https://github.com/alvaropinot/circular-iterator/issues/",
+  "homepage": "https://github.com/alvaropinot/circular-iterator#readme",
   "devDependencies": {
     "chai": "3.5.0",
     "istanbul": "0.4.2",
     "mocha": "2.4.5"
+  },
+  "engines": {
+    "node": ">=4.2"
   }
 }
