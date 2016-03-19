@@ -2,7 +2,17 @@
   "name": "circular-iterator",
   "version": "1.0.0",
   "description": "a simple infinite array iterator using generators",
-  "keywords": ["circular", "iterator", "infinite", "array", "generators"],
+  "keywords": [
+    "circular",
+    "iterator",
+    "infinite",
+    "array",
+    "generators",
+    "for",
+    "forEach",
+    "each",
+    "loop"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "npm run coverage",
