@@ -23,6 +23,7 @@
   "license": "MIT",
   "bugs": "https://github.com/alvaropinot/circular-iterator/issues/",
   "homepage": "https://github.com/alvaropinot/circular-iterator#readme",
+  "tonicExampleFilename": "examples/example.js",
   "devDependencies": {
     "chai": "3.5.0",
     "istanbul": "0.4.2",
