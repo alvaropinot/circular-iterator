@@ -17,8 +17,8 @@ npm install --save circular-iterator
 Just require the module.
 
 ```javascript
-var circularIterator = require('circular-iterator');
-var iterator = circularIterator([1, 2, 3]);
+const circularIterator = require('circular-iterator');
+const iterator = circularIterator([1, 2, 3]);
 console.log(iterator.next().value); //1
 console.log(iterator.next().value); //2
 console.log(iterator.next().value); //3
@@ -30,10 +30,10 @@ console.log(iterator.next().value); //1
 ## Example
 A fancy players turns controller.
 ```javascript
-var circularIterator = require('circular-iterator');
+const circularIterator = require('circular-iterator');
 
 // Some players
-var players = [
+const players = [
   {
     name: 'Player 1'
   },
@@ -46,9 +46,9 @@ var players = [
 ];
 
 // Create an iterator with our players.
-var turnController = circularIterator(players);
+const turnController = circularIterator(players);
 
-var actualPlayer = turnController.next().value;
+let actualPlayer = turnController.next().value;
 // It's Player 1 turn.
 console.log('%s is your turn!', actualPlayer.name);
 
