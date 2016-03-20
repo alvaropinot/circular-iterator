@@ -1,8 +1,9 @@
 /* eslint no-console: 0 */
-var circularIterator = require('../');
+'use strict';
+const circularIterator = require('../');
 
 // Some players
-var players = [
+const players = [
   {
     name: 'Player 1'
   },
@@ -15,9 +16,10 @@ var players = [
 ];
 
 // Create an iterator with our players.
-var turnController = circularIterator(players);
+const turnController = circularIterator(players);
 
-var actualPlayer = turnController.next().value;
+let actualPlayer = turnController.next().value;
+
 // It's Player 1 turn.
 console.log('%s is your turn!', actualPlayer.name);
 
