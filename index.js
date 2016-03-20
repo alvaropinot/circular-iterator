@@ -1,11 +1,12 @@
-'use strict'
+'use strict';
 
 function *circularIterator(arr) {
-  var index = 0,
-    elements = Array.isArray(arr) ? arr.slice(0) : [],
-    length = elements.length;
-  while (true) {
-    yield elements[index++ % length];
+  let index = 0;
+  const elements = Array.isArray(arr) ? arr.slice() : [];
+  const length = elements.length;
+
+  while (elements.length) {
+    yield elements[ index++ % length ];
   }
 }
 

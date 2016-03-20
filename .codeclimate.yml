@@ -16,3 +16,4 @@ ratings:
   - "**index.js"
 exclude_paths:
 - "**/*test.js"
+- ".eslintrc.js"
