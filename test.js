@@ -1,6 +1,10 @@
-var chai = require('chai');
-var should = chai.should();
-var expect = chai.expect;
+var chai = require('chai'),
+  mocha = require('mocha');
+
+var describe = mocha.describe,
+  beforeEach = mocha.beforeEach,
+  it = mocha.it,
+  expect = chai.expect;
 
 var circularIterator = require('./');
 
@@ -45,7 +49,7 @@ describe('circular iterator', function () {
   });
 
   it('should not return `done` when the end is reached', function () {
-    arr.map(function(number){
+    arr.map(function(){
       iterator.next();
     });
     expect(iterator.next().done).to.be.false;
