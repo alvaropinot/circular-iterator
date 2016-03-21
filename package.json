@@ -1,6 +1,6 @@
 {
   "name": "circular-iterator",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "a simple infinite array iterator using generators",
   "keywords": [
     "circular",
