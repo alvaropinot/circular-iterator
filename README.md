@@ -30,7 +30,7 @@ console.log(iterator.next().value); //3
 console.log(iterator.next().value); //1
 ```
 
-
+[Try it in your browser](https://tonicdev.com/npm/circular-iterator)
 
 ## Example
 A fancy players turns controller.
@@ -80,3 +80,6 @@ Player 2 is your turn!
 Player 3 is your turn!
 Player 1 is your turn!
 ```
+
+# License
+MIT @ Alvaro Pinot
