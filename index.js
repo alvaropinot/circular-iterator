@@ -5,7 +5,7 @@ function *circularIterator(arr) {
   const elements = Array.isArray(arr) ? arr.slice() : [];
   const length = elements.length;
 
-  while (elements.length) {
+  while (length) {
     yield elements[ index++ % length ];
   }
 }
