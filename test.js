@@ -1,13 +1,13 @@
 'use strict';
-let chai = require('chai');
-let mocha = require('mocha');
+const chai = require('chai');
+const mocha = require('mocha');
 
-let describe = mocha.describe;
-let beforeEach = mocha.beforeEach;
-let it = mocha.it;
-let expect = chai.expect;
+const describe = mocha.describe;
+const beforeEach = mocha.beforeEach;
+const it = mocha.it;
+const expect = chai.expect;
 
-let circularIterator = require('./');
+const circularIterator = require('./');
 
 describe('circular iterator', function() {
   let arr;
@@ -25,7 +25,7 @@ describe('circular iterator', function() {
     });
 
     it('should return the following properties', function() {
-      let status = circularIterator(arr).next();
+      const status = circularIterator(arr).next();
 
       expect(status).to.have.property('value');
       expect(status).to.have.property('done').that.is.a('boolean');
@@ -64,7 +64,7 @@ describe('circular iterator', function() {
     });
 
     it('should work with no params', function() {
-      let voidIterator = circularIterator();
+      const voidIterator = circularIterator();
 
       expect(voidIterator.next().value).to.be.undefined;
     });
