@@ -7,7 +7,6 @@ function *circularIterator(arr) {
 
   while (length) {
     index = (index + 1) % length;
-    console.log(index);
     yield elements[index];
   }
 }
