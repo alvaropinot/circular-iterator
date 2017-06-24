@@ -21,7 +21,7 @@ describe('circular iterator', function() {
   describe('public API', function() {
 
     it('should be defined and a function', function() {
-      expect(circularIterator).to.be.a('function');
+      expect(typeof circularIterator).to.equal('function');
     });
 
     it('should return the following properties', function() {
