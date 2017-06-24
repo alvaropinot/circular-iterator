@@ -1,4 +1,5 @@
 # ignore CI and config dotfiles
+.codeclimate.yml
 .editorconfig
 .eslintrc.js
 .travis.yml
