@@ -1,0 +1,8 @@
+# ignore CI and config dotfiles
+.editorconfig
+.eslintrc.js
+.travis.yml
+
+# examples wont harm so keep them for now =)
+
+test.js
