@@ -1,6 +1,6 @@
 {
   "name": "circular-iterator",
-  "version": "1.1.5",
+  "version": "1.2.0",
   "description": "a simple infinite array iterator using generators",
   "keywords": [
     "circular",
@@ -11,13 +11,19 @@
     "for",
     "forEach",
     "each",
-    "loop"
+    "loop",
+    "es6",
+    "es5",
+    "regenerator"
   ],
   "main": "index.js",
   "scripts": {
+    "build:es5": "regenerator  index.js > es5.js",
+    "build:es5-with-runtime": "regenerator --include-runtime index.js > es5-with-runtime.js",
     "test": "npm run coverage",
     "test-watch": "mocha -w",
-    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js"
+    "coverage": "istanbul cover ./node_modules/.bin/_mocha -- test.js",
+    "prepare": "npm run build:es5 && npm run build:es5-with-runtime"
   },
   "author": "Alvaro Pinot",
   "license": "MIT",
@@ -25,9 +31,10 @@
   "homepage": "https://github.com/alvaropinot/circular-iterator#readme",
   "tonicExampleFilename": "examples/example.js",
   "devDependencies": {
-    "chai": "3.5.0",
-    "istanbul": "0.4.2",
-    "mocha": "2.4.5"
+    "regenerator": "~0.9.7",
+    "chai": "4.x.x",
+    "istanbul": "~0.4.5",
+    "mocha": "3.x.x"
   },
   "engines": {
     "node": ">=4.2"
