@@ -9,12 +9,12 @@
 
 
 # circular-iterator
-Circular iteration over any array the fancy way.
+Circular iteration over any array, the fancy way.
 
 ## Installation
 You can install circular-iterator using npm.
 
-```
+```bash
 npm install --save circular-iterator
 ```
 
@@ -31,6 +31,23 @@ console.log(iterator.next().value); //1
 ```
 
 [Try it in your browser](https://tonicdev.com/npm/circular-iterator)
+
+### ES5
+Provided ES5 distribution was transformed with [regenerator](https://github.com/facebook/regenerator) tool.
+
+```javascript
+const circularIterator = require('circular-iterator/es5');
+```
+
+or
+```javascript
+const circularIterator = require('circular-iterator/es5-with-runtime');
+```
+> Include regenerator `runtime`
+
+### Use like a Snippet
+`circular-interator` is a very simple piece of code well done and without dependencies. Just copy-paste [circularIterator](https://github.com/alvaropinot/circular-iterator/blob/master/index.js#L3) is needed.
+
 
 ## Example
 A fancy players turns controller.
