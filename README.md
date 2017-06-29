@@ -98,5 +98,16 @@ Player 3 is your turn!
 Player 1 is your turn!
 ```
 
-# License
-MIT @ Alvaro Pinot
+## Credits
+
+### author
+* Alvaro Pinot <> [@alvaropinot](https://github.com/alvaropinot)
+
+### contributors
+* [@bySabi](https://github.com/bySabi)
+
+## License
+
+[MIT][mit-license]
+
+[mit-license]:./LICENSE

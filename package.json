@@ -1,6 +1,6 @@
 {
   "name": "circular-iterator",
-  "version": "1.2.0",
+  "version": "1.1.5",
   "description": "a simple infinite array iterator using generators",
   "keywords": [
     "circular",
@@ -37,6 +37,6 @@
     "mocha": "3.x.x"
   },
   "engines": {
-    "node": ">=4.2"
+    "node": ">=0.6"
   }
 }

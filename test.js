@@ -7,7 +7,9 @@ const beforeEach = mocha.beforeEach;
 const it = mocha.it;
 const expect = chai.expect;
 
-const circularIterator = require('./');
+const circularIterator = process.env.CONTINUOUS_INTEGRATION
+  ? require('./es5-with-runtime')
+  : require('./');
 
 describe('circular iterator', function() {
   let arr;
