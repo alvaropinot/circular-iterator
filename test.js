@@ -1,19 +1,20 @@
 'use strict';
-const chai = require('chai');
-const mocha = require('mocha');
+require('es5-shim');
+var chai = require('chai');
+var mocha = require('mocha');
 
-const describe = mocha.describe;
-const beforeEach = mocha.beforeEach;
-const it = mocha.it;
-const expect = chai.expect;
+var describe = mocha.describe;
+var beforeEach = mocha.beforeEach;
+var it = mocha.it;
+var expect = chai.expect;
 
-const circularIterator = process.env.CONTINUOUS_INTEGRATION
+var circularIterator = process.env.CONTINUOUS_INTEGRATION
   ? require('./es5-with-runtime')
   : require('./');
 
 describe('circular iterator', function() {
-  let arr;
-  let iterator;
+  var arr;
+  var iterator;
 
   beforeEach(function() {
     arr = ['foo', 'bar', 'buz'];
@@ -27,7 +28,7 @@ describe('circular iterator', function() {
     });
 
     it('should return the following properties', function() {
-      const status = circularIterator(arr).next();
+      var status = circularIterator(arr).next();
 
       expect(status).to.have.property('value');
       expect(status).to.have.property('done').that.is.a('boolean');
@@ -66,7 +67,7 @@ describe('circular iterator', function() {
     });
 
     it('should work with no params', function() {
-      const voidIterator = circularIterator();
+      var voidIterator = circularIterator();
 
       expect(voidIterator.next().value).to.be.undefined;
     });
