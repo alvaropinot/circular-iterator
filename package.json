@@ -34,7 +34,8 @@
     "regenerator": "~0.9.7",
     "chai": "4.x.x",
     "istanbul": "~0.4.5",
-    "mocha": "3.x.x"
+    "mocha": "3.x.x",
+    "es5-shim": "4.x.x"
   },
   "engines": {
     "node": ">=0.6"
